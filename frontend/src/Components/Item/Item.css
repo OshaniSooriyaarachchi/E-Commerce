@@ -1,0 +1,120 @@
+.item{
+    width: 21%;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 2px solid var(--light-pink);
+}
+
+.item-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    height: 250px; /* Fixed height for consistent sizing */
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover; /* Maintains aspect ratio while filling container */
+    object-position: center; /* Centers the image */
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.wishlist-btn:hover {
+    background: white;
+    transform: scale(1.1);
+    color: #ff4757;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.wishlist-btn.in-wishlist {
+    color: #ff4757;
+    background: white;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+    animation: heartBeat 0.5s ease-in-out;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.item p{
+    margin: 6px 0px;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.item-prices{
+    display: flex;
+    gap: 15px;
+}
+.item-price-new{
+    color: var(--primary-navy);
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-price-old{
+    color: var(--medium-gray);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+
+@media(max-width:800px){
+    .item{
+        width: 35%;
+    }
+    .item-image-container {
+        height: 200px; /* Smaller height for tablets */
+    }
+    .item-price-old{
+        font-size: 12px;
+    }
+    .wishlist-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+@media(max-width:500px){
+    .item p{
+        font-size: 14px;
+    }
+    .item-price-new{
+        font-size: 14px;
+    }
+    .item-image-container {
+        height: 150px; /* Even smaller height for mobile */
+    }
+}

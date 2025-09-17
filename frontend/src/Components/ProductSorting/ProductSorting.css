@@ -1,0 +1,25 @@
+.product-sorting {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-select {
+  padding: 10px 15px;
+  border: 1px solid var(--medium-gray);
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  color: var(--dark-gray);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.sort-select:hover {
+  border-color: var(--soft-pink);
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--primary-navy);
+}

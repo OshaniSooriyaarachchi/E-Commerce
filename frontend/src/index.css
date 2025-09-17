@@ -1,0 +1,28 @@
+:root {
+  --primary-navy: #03083a;
+  --accent-blue: #1e40af;
+  --soft-pink: #f8bbd9;
+  --light-pink: #fce7f3;
+  --white: #ffffff;
+  --light-gray: #f8fafc;
+  --medium-gray: #64748b;
+  --dark-gray: #1e293b;
+  --success-green: #10b981;
+  --warning-amber: #f59e0b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+}
+
+body {
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
