@@ -13,7 +13,7 @@ const LoginSignup = ({ isModal = false, onLoginSuccess, onSkip }) => {
 
   const login = async () => {
     let dataObj;
-    await fetch('http://localhost:4000/login', {
+    await fetch('https://ecommerce-backend-ldpj.onrender.com/login', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -46,7 +46,7 @@ const LoginSignup = ({ isModal = false, onLoginSuccess, onSkip }) => {
     }
 
     let dataObj;
-    await fetch('http://localhost:4000/signup', {
+    await fetch('https://ecommerce-backend-ldpj.onrender.com/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',

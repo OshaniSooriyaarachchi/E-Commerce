@@ -10,7 +10,7 @@ import ShopCategory from "./Pages/ShopCategory";
 import LoginSignup from "./Pages/LoginSignup";
 import Wishlist from "./Components/Wishlist/Wishlist";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'https://ecommerce-backend-ldpj.onrender.com';
 export const currency = 'LKR';
 
 function App() {
